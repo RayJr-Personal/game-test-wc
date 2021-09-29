@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module BowlingGame</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>BowlingGame</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Craymo%5Conedrive%20-%20whitecliffe%20college%5Cit6039%20-%20software%20testing%5Cassessments%5Cproject%20assessment%20%2850%25%2C%20due%20sep%2023%29%5Cgamefiles%5Cbowlinggame.py">c:\users\raymo\onedrive - whitecliffe college\it6039 - software testing\assessments\project assessment (50%, due sep 23)\gamefiles\bowlinggame.py</a></font></td></tr></table>
+    <p><tt>Module&nbsp;consisting&nbsp;of&nbsp;the&nbsp;educational&nbsp;bowling&nbsp;game's&nbsp;mechanics.<br>
+Author:&nbsp;Unknown<br>
+Date:&nbsp;25th&nbsp;of&nbsp;September&nbsp;2021</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="BowlingGame.html#BowlingGame">BowlingGame</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BowlingGame">class <strong>BowlingGame</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;contains&nbsp;the&nbsp;bowling&nbsp;game&nbsp;mechanics.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="BowlingGame-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-frameScore"><strong>frameScore</strong></a>(self, rollIndex)</dt><dd><tt>Returns&nbsp;the&nbsp;score&nbsp;for&nbsp;one&nbsp;frame.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+rollIndex&nbsp;--&nbsp;index&nbsp;used&nbsp;to&nbsp;get&nbsp;the&nbsp;specific&nbsp;frame&nbsp;score</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-isSpare"><strong>isSpare</strong></a>(self, rollIndex)</dt><dd><tt>Checks&nbsp;whether&nbsp;two&nbsp;specified&nbsp;rolls&nbsp;equal&nbsp;10.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+rollIndex&nbsp;--&nbsp;index&nbsp;used&nbsp;to&nbsp;get&nbsp;the&nbsp;specific&nbsp;roll&nbsp;scores&nbsp;to&nbsp;be&nbsp;compared</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-isStrike"><strong>isStrike</strong></a>(self, rollIndex)</dt><dd><tt>Checks&nbsp;whether&nbsp;a&nbsp;specified&nbsp;roll&nbsp;equals&nbsp;10.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+rollIndex&nbsp;--&nbsp;index&nbsp;used&nbsp;to&nbsp;get&nbsp;the&nbsp;specific&nbsp;roll&nbsp;score&nbsp;to&nbsp;be&nbsp;compared</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-roll"><strong>roll</strong></a>(self, pins)</dt><dd><tt>Adds&nbsp;a&nbsp;'roll'&nbsp;in&nbsp;the&nbsp;list&nbsp;of&nbsp;rolls.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+pins&nbsp;--&nbsp;The&nbsp;number&nbsp;of&nbsp;pins&nbsp;knocked&nbsp;down&nbsp;for&nbsp;one&nbsp;roll.<br>
+This&nbsp;gets&nbsp;added&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;rolls.</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-score"><strong>score</strong></a>(self)</dt><dd><tt>Calculates&nbsp;the&nbsp;total&nbsp;score&nbsp;based&nbsp;on&nbsp;the&nbsp;list&nbsp;of&nbsp;rolls.<br>
+Returns&nbsp;the&nbsp;calculated&nbsp;sum.</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-spareScore"><strong>spareScore</strong></a>(self, rollIndex)</dt><dd><tt>Returns&nbsp;the&nbsp;next&nbsp;frame's&nbsp;first&nbsp;roll&nbsp;score&nbsp;plus&nbsp;10&nbsp;for&nbsp;scoring&nbsp;a&nbsp;spare.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+rollIndex&nbsp;--&nbsp;index&nbsp;used&nbsp;to&nbsp;get&nbsp;the&nbsp;specific&nbsp;roll&nbsp;score&nbsp;to&nbsp;be&nbsp;added</tt></dd></dl>
+
+<dl><dt><a name="BowlingGame-strikeScore"><strong>strikeScore</strong></a>(self, rollIndex)</dt><dd><tt>Returns&nbsp;the&nbsp;next&nbsp;frame's&nbsp;score&nbsp;plus&nbsp;10&nbsp;for&nbsp;scoring&nbsp;a&nbsp;strike.<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+rollIndex&nbsp;--&nbsp;index&nbsp;used&nbsp;to&nbsp;get&nbsp;the&nbsp;specific&nbsp;roll&nbsp;scores&nbsp;to&nbsp;be&nbsp;added</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
